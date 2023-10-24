@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/todo.css">
+    <link rel="stylesheet" href="css/setting.css">
+    <link rel="stylesheet" href="css/quick-access.css">
+    <title>New Tab</title>
+</head>
+
+<body>
+    <div class="app">
+        <img src="./assets//bg-1.jpg" alt="bg" id="img-bg" />
+        <div class="overlay"></div>
+
+        <div class="center">
+            <h2>Nhat Le</h2>
+            <div class="working-day">
+                <p class="text"></p>
+                <p class="day-overlay"></p>
+            </div>
+
+            <div class="quick-access">
+                <ul>
+                </ul>
+            </div>
+        </div>
+
+        <div class="todo todo-right">
+            <div class="todo-content">
+                <ul>
+                </ul>
+
+                <div class="add">
+                    <input id="input-add" placeholder="+ Add todo..." />
+                </div>
+            </div>
+        </div>
+
+        <div class="setting setting-left">
+            <img src="./assets/setting.svg" alt="setting" id="setting-icon" />
+        </div>
+        <div class="setting-content setting-content-left" id="setting-content">
+            <div class="change-bg setting-item">
+                <h4 class="">Thay đổi hình nền</h4>
+                <input type="text" placeholder="Nhập đường dẫn hình ảnh..." />
+            </div>
+            <div class="add-link setting-item">
+                <h4 class="">Thêm đường dẫn nhanh</h4>
+                <input type="text" placeholder="Nhập đường dẫn..." />
+            </div>
+            <div class="change-layout setting-item">
+                <h4 class="change-layout">Đổi bên</h4>
+            </div>
+        </div>
+
+        <div class="modal-quick">
+            <div class="content">
+                <input class="name" name="name" placeholder="Nhập tên..." />
+                <input class="url" name="url" placeholder="Nhập url..." />
+
+                <div class="">
+                    <p class="close">Huy</p>
+                    <p class="submit">Xong</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/index.js" type="module"></script>
+</body>
+
+</html>

@@ -1,0 +1,131 @@
+.quick-access {
+    width: 100%;
+    height: 200px;
+    margin-top: 150px;
+}
+
+.quick-access ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.quick-access .item {
+    width: 20%;
+    padding: 10px;
+    position: relative;
+}
+
+.quick-access .item:hover {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+.quick-access .item .delete {
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background: red;
+    position: absolute;
+    top: 0px;
+    right: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+.quick-access .item:hover .delete {
+    display: block;
+}
+
+.quick-access .item div {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.quick-access .item div img {
+    width: 20px;
+    height: 20px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.quick-access .item p {
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 5px;
+    cursor: pointer;
+    color: white;
+    text-transform: capitalize;
+}
+
+.modal-quick {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 50;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-quick .content {
+    width: 400px;
+    height: fit-content;
+    padding: 16px;
+    border-radius: 4px;
+    background-color: white;
+}
+
+.modal-quick .content input {
+    width: 100%;
+    height: 32px;
+    padding: 0 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    outline: none;
+}
+
+.modal-quick .content div {
+    display: flex;
+    justify-content: end;
+}
+
+.modal-quick .content div p {
+    width: fit-content;
+    padding: 6px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.modal-quick .content div .close {
+    background: silver;
+    margin-right: 10px;
+}
+
+.modal-quick .content div .submit {
+    background: green;
+}
+
+.modal-quick .content div p:hover {
+ opacity: 0.8;
+}

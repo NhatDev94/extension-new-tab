@@ -1,0 +1,59 @@
+.setting {
+    position: absolute;
+    bottom: 10px;
+    width: 22px;
+    height: 22px;
+    border-radius: 100%;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.setting-content {
+    position: absolute;
+    bottom: 36px;
+    width: 320px;
+    height: 140px;
+    border-radius: 6px;
+    background: white;
+    padding: 16px;
+    display: none;
+}
+
+.setting-item {
+    margin-bottom: 10px;
+    height: fit-content;
+}
+
+.setting-item h4 {
+    cursor: pointer;
+    height: 24px;
+    font-weight: 600;
+    user-select: none;
+}
+
+.setting-item input {
+    height: 24px;
+    padding: 0 10px;
+    display: none;
+}
+
+.setting-left {
+    left: 10px;
+}
+
+.setting-content-left {
+    left: 10px;
+}
+
+.setting-content-right {
+    right: 10px;
+}
+
+.setting-right {
+    right: 10px;
+}

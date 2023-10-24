@@ -1,0 +1,95 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: white;
+}
+
+.app {
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+}
+
+.app #img-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -10;
+}
+
+.app .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -9;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.center {
+    width: 40%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding-top: 150px;
+}
+
+.center h2 {
+    font-size: 48px;
+    color: white;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    height: fit-content;
+    width: 100%;
+    text-align: center;
+}
+
+.center .working-day {
+    width: fit-content;
+    margin: 0 auto;
+    background: #272829;
+    border-radius: 4px;
+    margin-top: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.center .working-day .text {
+    color: white;
+    padding: 6px 10px;
+    font-size: 16px;
+    font-weight: 600;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 2px;
+    user-select: none;
+}
+
+.center .working-day .day-overlay {
+    width: 100%;
+    height: 100%;
+    z-index: 20;
+    background: #272829;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+input[type='text'] {
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    outline: none;
+    padding: 5px 10px;
+    width: 100%;
+}
